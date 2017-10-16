@@ -1,14 +1,13 @@
-'use strict';
-
 import React, {
 	Component,
-	PropTypes,
 } from 'react';
 import {
 	ListView,
 	Text,
 	View,
+	ViewPropTypes,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import SwipeRow from './SwipeRow';
 
@@ -214,7 +213,7 @@ SwipeListView.propTypes = {
 	/**
 	 * Styles for the parent wrapper View of the SwipeRow
 	 */
-	swipeRowStyle: View.propTypes.style,
+	swipeRowStyle: ViewPropTypes.style,
 	/**
 	 * Called when the ListView ref is set and passes a ref to the ListView
 	 * e.g. listViewRef={ ref => this._swipeListViewRef = ref }
